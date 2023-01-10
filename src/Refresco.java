@@ -1,6 +1,5 @@
-import java.awt.PageAttributes.PrintQualityType;
 
-public class Refresco {
+public class Refresco extends Articulo{
 	private String sabor;
 	private boolean zumo;
 	private boolean gaseoso;
@@ -55,11 +54,16 @@ public class Refresco {
 		this.gaseoso = gaseoso;
 		this.cantidadAzucar = cantidadAzucar;
 	}
-
+	
+	@Override
+	public String toString() {
+		return "Refresco [sabor=" + sabor + ", zumo=" + zumo + ", gaseoso=" + gaseoso + ", cantidadAzucar="
+				+ cantidadAzucar + "]";
+	}
 	
 	
 	public void visualizarPropiedades() {
-		System.out.println();
+		System.out.println("Sabor :" + this.sabor + " Es un zumo? " + this.zumo + " Gas? " + this.gaseoso + "Cantidad de azucar: " + this.cantidadAzucar);
 	}
 	
 	public boolean esSaludable(){
@@ -68,5 +72,26 @@ public class Refresco {
 			esSaludable = true;
 		}
 		return esSaludable;
+	}
+
+
+	@Override
+	public void visualizarArticulo() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public void saludable() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public void precioTotal() {
+		// TODO Auto-generated method stub
+		
 	}
 }
