@@ -44,11 +44,10 @@ public class Refresco extends Articulo{
 	public void setCantidadAzucar(int cantidadAzucar) {
 		this.cantidadAzucar = cantidadAzucar;
 	}
-
-	
-
-	public Refresco(String sabor, boolean zumo, boolean gaseoso, int cantidadAzucar) {
-		super();
+ 
+	public Refresco(String code, String name, String mark, int capacidadBotella, double precio, int stock, String sabor,
+			boolean zumo, boolean gaseoso, int cantidadAzucar) {
+		super(code, name, mark, capacidadBotella, precio, stock);
 		this.sabor = sabor;
 		this.zumo = zumo;
 		this.gaseoso = gaseoso;
