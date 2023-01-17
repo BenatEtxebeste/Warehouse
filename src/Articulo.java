@@ -74,5 +74,3 @@ public abstract class Articulo {
 	
 	public abstract void precioTotal();
 }
-aa
-
